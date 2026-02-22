@@ -1,48 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Krishnamurthy Kandregula | AI Product & Program Leader</title>
-
-<meta name="description" content="AI Product & Program Leader with 20+ years of enterprise experience in digital transformation, Agentic AI systems, and global program leadership.">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
 <style>
 
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #0f3d2e, #14532d);
     color: #f0fdf4;
     overflow-x: hidden;
+    background: linear-gradient(-45deg, #0f3d2e, #14532d, #0b3a2a, #166534);
+    background-size: 400% 400%;
+    animation: gradientMove 18s ease infinite;
 }
 
-/* === Geometric Background Layers === */
+/* Animated Gradient */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 
+/* Light Mesh Pattern Overlay */
 body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Soft Radial Academic Glow */
+body::after {
     content: "";
     position: fixed;
     top: -200px;
     right: -200px;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(255,255,255,0.08), transparent 70%);
-    transform: rotate(25deg);
-    z-index: 0;
-}
-
-body::after {
-    content: "";
-    position: fixed;
-    bottom: -150px;
-    left: -150px;
-    width: 500px;
-    height: 500px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.05), transparent);
-    transform: rotate(-20deg);
+    background: radial-gradient(circle, rgba(255,255,255,0.06), transparent 70%);
     z-index: 0;
 }
 
@@ -55,10 +51,10 @@ body::after {
 }
 
 .left {
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.35);
     padding: 50px 30px;
     text-align: center;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(8px);
 }
 
 .profile-img {
@@ -118,6 +114,18 @@ h1 {
 
 .section {
     margin-bottom: 40px;
+    animation: fadeUp 1s ease forwards;
+    opacity: 0;
+}
+
+.section:nth-child(1) { animation-delay: 0.2s; }
+.section:nth-child(2) { animation-delay: 0.4s; }
+.section:nth-child(3) { animation-delay: 0.6s; }
+.section:nth-child(4) { animation-delay: 0.8s; }
+
+@keyframes fadeUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 .section h2 {
@@ -144,80 +152,3 @@ h1 {
 }
 
 </style>
-</head>
-
-<body>
-
-<div class="container">
-
-<div class="left">
-
-<img src="profile.png" alt="Krishnamurthy Kandregula" class="profile-img">
-
-<h1>Krishnamurthy Kandregula</h1>
-
-<div class="title">
-AI Product & Program Leader<br>
-Enterprise Transformation | Agentic AI Systems
-</div>
-
-<div class="social">
-<a href="https://www.linkedin.com/in/Krishnakandregula" target="_blank">LinkedIn</a>
-<a href="https://github.com/kkandregula-ai" target="_blank">GitHub</a>
-</div>
-
-<a href="Krishnamurthy_Kandregula_Resume.pdf" target="_blank" class="btn">
-Download Resume
-</a>
-
-<div class="footer-email">
-kkandregula@gmail.com
-</div>
-
-</div>
-
-<div class="right">
-
-<div class="section">
-<h2>About Me</h2>
-<p class="about-text">
-Technology executive with 20+ years of global enterprise leadership across AI, digital transformation, and large-scale program governance. 
-Focused on building intelligent systems, enabling Agentic AI solutions, and delivering measurable business value in distributed global environments.
-</p>
-</div>
-
-<div class="section">
-<h2>Focus Areas</h2>
-<ul class="list">
-<li>Agentic AI & Intelligent Automation</li>
-<li>AI Product Strategy & Governance</li>
-<li>Enterprise Program Leadership</li>
-<li>Zero-Cost AI Architectures</li>
-<li>Global Cross-Functional Delivery</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>Education</h2>
-<ul class="list">
-<li>M.Tech – JNTU Hyderabad</li>
-<li>B.Tech – JNTU Kakinada</li>
-<li>Executive Program – Product Management & Agentic AI (IIT Patna)</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>Certifications</h2>
-<ul class="list">
-<li>AI & Machine Learning Specializations</li>
-<li>Enterprise Program Management</li>
-<li>Digital Transformation Leadership</li>
-</ul>
-</div>
-
-</div>
-
-</div>
-
-</body>
-</html>
