@@ -30,7 +30,7 @@ I focus on building intelligent systems, designing zero-cost AI architectures, a
 - Agentic AI architecture explorations
 
 Portfolio:  
-👉 https://kkandregula-ai.github.io
+👉 [https://kkandregula-ai.github.io/kkandregula-profile/]
 
 ---
 
